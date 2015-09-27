@@ -107,3 +107,6 @@ alias ne="emacs -nw"
 alias clean="rm -rf *~"
 source /home/rainiugnas/.rvm/scripts/rvm
 setxkbmap fr
+
+~.pam_environement
+/etc/default/locale
