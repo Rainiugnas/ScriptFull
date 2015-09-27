@@ -62,14 +62,6 @@ gem install pg
 sudo apt-get install retext
 
 
-#debuger
-sudo apt-get install valgrind
-
-# #cpp
-# sudo apt-get install libboost-all-dev
-# sudo apt-get install qt-sdk qttools5-dev qttools5-dev-tools
-# sudo apt-get install portaudio19-dev portaudio19-doc
-# sudo apt-get install opus-tools opus-tools-dbg
 
 #racourci
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F1" --create --type string --set "xfce4-terminal"
