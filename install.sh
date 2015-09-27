@@ -63,3 +63,13 @@ echo -e 'alias back="git reset --hard HEAD"' >> ~/my_bashrc.sh
 echo -e 'alias commit="add; git commit -a; push; info"' >> ~/my_bashrc.sh
 echo -e 'alias commit_message="emacs -nw ~/.gitmessage.txt"' >> ~/my_bashrc.sh
 echo -e 'alias commit_delete="git reset --hard HEAD^1"' >> ~/my_bashrc.sh
+
+
+#install sublime
+add-apt-repository ppa:webupd8team/sublime-text-2
+apt-get update
+apt-get install sublime-text
+
+#sublime's conf
+wget -O ~/.config/sublime-text-2/Packages/User/Preferences.sublime-settings google.fr
+wget -O ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap google.fr

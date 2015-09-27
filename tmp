@@ -19,27 +19,28 @@
 # #emacs
 # sudo apt-get install emacs
 
-#sublim
-sudo add-apt-repository ppa:webupd8team/sublime-text-2
-sudo apt-get update
-sudo apt-get install sublime-text
+# #sublim
+# sudo add-apt-repository ppa:webupd8team/sublime-text-2
+# sudo apt-get update
+# sudo apt-get install sublime-text
 
-#git
-sudo apt-get install git
-sudo apt-get install gitk
-git config --global user.email "aqdtvz9@gmail.com"
-git config --global user.name "Rainiugnas"
-git config --global core.editor "emacs -nw"
-git config --global push.default simple
-echo "Default commit message change me in  ~/.gitmessage.txt" > ~/.gitmessage
-git config --global commit.template ~/.gitmessage.txt
-sudo apt-get install git-flow
+# #git
+# sudo apt-get install git
+# sudo apt-get install gitk
+# git config --global user.email "aqdtvz9@gmail.com"
+# git config --global user.name "Rainiugnas"
+# git config --global core.editor "emacs -nw"
+# git config --global push.default simple
+# echo "Default commit message change me in  ~/.gitmessage.txt" > ~/.gitmessage
+# git config --global commit.template ~/.gitmessage.txt
+# sudo apt-get install git-flow
 
 # #google
 # wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 # sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 # sudo apt-get update
 # sudo apt-get install google-chrome-stable
+
 
 #rails
 sudo apt-get install curl
@@ -60,6 +61,7 @@ gem install pg
 #markdown editor
 sudo apt-get install retext
 
+
 #debuger
 sudo apt-get install valgrind
 
@@ -73,30 +75,34 @@ sudo apt-get install valgrind
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F1" --create --type string --set "xfce4-terminal"
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F2" --create --type string --set "google-chrome"
 
+
+
 #lamp + phpmyadmin
 sudo apt-get install apache2 php5 mysql-server libapache2-mod-php5 php5-mysql
 sudo apt-get install phpmyadmin
 
 
-#mise a jour des depot
-sudo apt-get update
-sudo apt-get upgrade
 
 
-----------
-acceder a config terminal xfce => xfconf-query
+# #mise a jour des depot
+# sudo apt-get update
+# sudo apt-get upgrade
 
-----------------------------------------------------------------------------------------
+
+# ----------
+# acceder a config terminal xfce => xfconf-query
+
+# ----------------------------------------------------------------------------------------
 
 ##
 ## à lancer de temps en temps
 ##
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo update-manager -c -d
+# sudo apt-get update
+# sudo apt-get upgrade
+# sudo update-manager -c -d
 
-----------------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------------
 
 ##
 ## Xubuntu: conf
@@ -108,5 +114,5 @@ cd
 source /home/rainiugnas/.rvm/scripts/rvm
 setxkbmap fr
 
-~.pam_environement
-/etc/default/locale
+# ~.pam_environement
+# /etc/default/locale

@@ -1,0 +1,32 @@
+[
+  {
+    "keys": ["ctrl+&"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1]]
+    }
+  },
+  {
+    "keys": ["ctrl+é"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+  { "keys": ["ctrl+d"], "command": "next_view" },
+  { "keys": ["ctrl+q"], "command": "prev_view" },
+  { "keys": ["ctrl+'"], "command": "close_file" },
+  { "keys": ["ctrl+shift+q"], "command": "move_to_group", "args": { "group": 0 } },
+  { "keys": ["ctrl+shift+d"], "command": "move_to_group", "args": { "group": 1 } },
+
+  { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 5.0 } },
+  { "keys": ["ctrl+down"], "command": "scroll_lines", "args": {"amount": -5.0 } },
+    { "keys": ["ctrl+<"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["ctrl+w"], "command": "move_to", "args": {"to": "eol", "extend": false} }
+]
