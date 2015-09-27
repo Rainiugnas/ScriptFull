@@ -3,18 +3,18 @@
 ## Xubuntu: installation
 ##
 
-#installation du français
-sudo apt-get install language-pack-fr language-pack-fr-base
-sudo apt-get install language-pack-xfce-fr
-sudo apt-get install language-pack-xfce-fr-base
-sudo apt-get install language-pack-gnome-fr
-sudo apt-get install language-pack-gnome-fr-base
-sudo apt-get install language-support-fr
-sudo install mozilla-firefox-local-fr
-sudo update-manager -c -d
+# #installation du français
+# sudo apt-get install language-pack-fr language-pack-fr-base
+# sudo apt-get install language-pack-xfce-fr
+# sudo apt-get install language-pack-xfce-fr-base
+# sudo apt-get install language-pack-gnome-fr
+# sudo apt-get install language-pack-gnome-fr-base
+# sudo apt-get install language-support-fr
+# sudo install mozilla-firefox-local-fr
+# sudo update-manager -c -d
 
-#nautilus
-sudo apt-get install nautilus
+# #nautilus
+# sudo apt-get install nautilus
 
 #emacs
 sudo apt-get install emacs
