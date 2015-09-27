@@ -16,8 +16,8 @@
 # #nautilus
 # sudo apt-get install nautilus
 
-#emacs
-sudo apt-get install emacs
+# #emacs
+# sudo apt-get install emacs
 
 #sublim
 sudo add-apt-repository ppa:webupd8team/sublime-text-2
@@ -35,11 +35,11 @@ echo "Default commit message change me in  ~/.gitmessage.txt" > ~/.gitmessage
 git config --global commit.template ~/.gitmessage.txt
 sudo apt-get install git-flow
 
-#google
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-sudo apt-get update
-sudo apt-get install google-chrome-stable
+# #google
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+# sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+# sudo apt-get update
+# sudo apt-get install google-chrome-stable
 
 #rails
 sudo apt-get install curl
@@ -63,11 +63,11 @@ sudo apt-get install retext
 #debuger
 sudo apt-get install valgrind
 
-#cpp
-sudo apt-get install libboost-all-dev
-sudo apt-get install qt-sdk qttools5-dev qttools5-dev-tools
-sudo apt-get install portaudio19-dev portaudio19-doc
-sudo apt-get install opus-tools opus-tools-dbg
+# #cpp
+# sudo apt-get install libboost-all-dev
+# sudo apt-get install qt-sdk qttools5-dev qttools5-dev-tools
+# sudo apt-get install portaudio19-dev portaudio19-doc
+# sudo apt-get install opus-tools opus-tools-dbg
 
 #racourci
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F1" --create --type string --set "xfce4-terminal"
@@ -103,8 +103,8 @@ sudo update-manager -c -d
 ##
 
 cd
-alias ne="emacs -nw"
-alias clean="rm -rf *~"
+# alias ne="emacs -nw"
+# alias clean="rm -rf *~"
 source /home/rainiugnas/.rvm/scripts/rvm
 setxkbmap fr
 

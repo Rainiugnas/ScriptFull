@@ -33,3 +33,33 @@ apt-get update
 apt-get install google-chrome-stable
 
 
+#install emacs
+apt-get install emacs
+
+#emacs's alias
+echo -e "\n#Emacs\nalias ne='emacs -nw'" >> ~/my_bashrc.sh
+echo "alias clean='rm -rf *~'" >> ~/my_bashrc.sh
+
+
+#install git
+apt-get install git
+git config --global user.email "aqdtvz9@gmail.com"
+git config --global user.name "Rainiugnas"
+git config --global core.editor "emacs -nw"
+git config --global push.default simple
+echo "Default commit message change me in  ~/.gitmessage.txt" > ~/.gitmessage
+git config --global commit.template ~/.gitmessage.txt
+apt-get install gitk
+
+#git's alias
+echo -e "\n#Git" >> ~/my_bashrc.sh
+echo -e 'alias branch="git branch"' >> ~/my_bashrc.sh
+echo -e 'alias status="git status"' >> ~/my_bashrc.sh
+echo -e 'alias info="branch; status"' >> ~/my_bashrc.sh
+echo -e 'alias add="git add --all"' >> ~/my_bashrc.sh
+echo -e 'alias pull="git pull"' >> ~/my_bashrc.sh
+echo -e 'alias push="git push"' >> ~/my_bashrc.sh
+echo -e 'alias back="git reset --hard HEAD"' >> ~/my_bashrc.sh
+echo -e 'alias commit="add; git commit -a; push; info"' >> ~/my_bashrc.sh
+echo -e 'alias commit_message="emacs -nw ~/.gitmessage.txt"' >> ~/my_bashrc.sh
+echo -e 'alias commit_delete="git reset --hard HEAD^1"' >> ~/my_bashrc.sh
