@@ -53,16 +53,16 @@ apt-get install gitk
 
 #git's alias
 echo -e "\n#Git" >> ~/my_bashrc.sh
-echo -e 'alias branch="git branch"' >> ~/my_bashrc.sh
-echo -e 'alias status="git status"' >> ~/my_bashrc.sh
-echo -e 'alias info="branch; status"' >> ~/my_bashrc.sh
-echo -e 'alias add="git add --all"' >> ~/my_bashrc.sh
-echo -e 'alias pull="git pull"' >> ~/my_bashrc.sh
-echo -e 'alias push="git push"' >> ~/my_bashrc.sh
-echo -e 'alias back="git reset --hard HEAD"' >> ~/my_bashrc.sh
-echo -e 'alias commit="add; git commit -a; push; info"' >> ~/my_bashrc.sh
-echo -e 'alias commit_message="emacs -nw ~/.gitmessage.txt"' >> ~/my_bashrc.sh
-echo -e 'alias commit_delete="git reset --hard HEAD^1"' >> ~/my_bashrc.sh
+echo 'alias branch="git branch"' >> ~/my_bashrc.sh
+echo 'alias status="git status"' >> ~/my_bashrc.sh
+echo 'alias info="branch; status"' >> ~/my_bashrc.sh
+echo 'alias add="git add --all"' >> ~/my_bashrc.sh
+echo 'alias pull="git pull"' >> ~/my_bashrc.sh
+echo 'alias push="git push"' >> ~/my_bashrc.sh
+echo 'alias back="git reset --hard HEAD"' >> ~/my_bashrc.sh
+echo 'alias commit="add; git commit -a; push; info"' >> ~/my_bashrc.sh
+echo 'alias commit_message="emacs -nw ~/.gitmessage.txt"' >> ~/my_bashrc.sh
+echo 'alias commit_delete="git reset --hard HEAD^1"' >> ~/my_bashrc.sh
 
 
 #install sublime
@@ -73,3 +73,20 @@ apt-get install sublime-text
 #sublime's conf
 wget -O ~/.config/sublime-text-2/Packages/User/Preferences.sublime-settings https://github.com/Rainiugnas/ScriptFull/blob/master/sublime-settings.json
 wget -O ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/sublime-bind.json
+
+
+#Personal config
+mkdir ~/work
+
+echo -e "\n#Private" >> ~/my_bashrc.sh
+echo 'alias bashconf="emacs -nw ~/my_bashrc.sh"' >> ~/my_bashrc.sh
+echo 'alias histo="history | grep"' >> ~/my_bashrc.sh
+echo 'cd ~/work' >> ~/my_bashrc.sh
+
+
+#Xfce bind
+xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F1" --create --type string --set "xfce4-terminal --tab"
+xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F2" --create --type string --set "google-chrome"
+xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F3" --create --type string --set "sublime-text"
+
+#term theme
