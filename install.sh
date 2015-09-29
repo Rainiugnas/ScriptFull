@@ -84,9 +84,11 @@ echo 'alias histo="history | grep"' >> ~/my_bashrc.sh
 echo 'cd ~/work' >> ~/my_bashrc.sh
 
 
-#Xfce bind
+###Xfce settings
+#bind
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F1" --create --type string --set "xfce4-terminal --tab"
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F2" --create --type string --set "google-chrome"
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F3" --create --type string --set "sublime-text"
 
-#term theme
+#terminal theme
+wget -O ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/term-conf
