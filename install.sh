@@ -92,3 +92,9 @@ xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F3"
 
 #terminal theme
 wget -O ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/term-conf
+
+#windows theme
+xfconf-query -c xfwm4 -p "/general/theme" --create --type string --set "Numix"
+
+#global theme
+xfconf-query -c xfwm4 -p "/general/theme" --create --type string --set "Numix"
