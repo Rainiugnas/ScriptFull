@@ -98,3 +98,8 @@ xfconf-query -c xfwm4 -p "/general/theme" --create --type string --set "Numix"
 
 #global theme
 xfconf-query -c xfwm4 -p "/general/theme" --create --type string --set "Numix"
+
+#remove background image
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-show -s false
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor1/image-show -s false
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/image-style -s 0
