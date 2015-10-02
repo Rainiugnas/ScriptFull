@@ -23,7 +23,7 @@ sed -i "s/$line/$varname\"$val\"/g" $file
 
 #create file to add bash conf
 touch ~/my_bashrc.sh
-echo -e "\n#Add by ScryptFull\nbash ~/my_bashrc.sh" >> ~/.bashrc
+echo -e "\n#Add by ScryptFull\nsource ~/my_bashrc.sh" >> ~/.bashrc
 
 
 #install google chrome
