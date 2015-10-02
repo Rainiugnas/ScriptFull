@@ -71,7 +71,9 @@ apt-get update
 apt-get install sublime-text
 
 #sublime's conf
+mkdir -p ~/.config/sublime-text-2/Packages/User/Preferences.sublime-settings
 wget -O ~/.config/sublime-text-2/Packages/User/Preferences.sublime-settings https://github.com/Rainiugnas/ScriptFull/blob/master/sublime-settings.json
+mkdir -p ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap
 wget -O ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/sublime-bind.json
 
 
@@ -91,6 +93,7 @@ xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F2"
 xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F3" --create --type string --set "sublime-text"
 
 #terminal theme
+mkdir -p ~/.config/xfce4/terminal/
 wget -O ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/term-conf
 
 #windows theme
