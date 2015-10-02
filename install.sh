@@ -101,4 +101,4 @@ xfconf-query -c xsettings -p "/Net/ThemeName" --create --type string --set "Numi
 
 #background
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/image-style -s 0
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/color1 -t uint -s 3084 -t uint -s 3084 -t uint -s 3080 -t uint -s 65535
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/color1 --create -t uint -s 3084 -t uint -s 3084 -t uint -s 3080 -t uint -s 65535
