@@ -63,9 +63,9 @@ sudo apt-get install retext
 
 
 
-#racourci
-xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F1" --create --type string --set "xfce4-terminal"
-xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F2" --create --type string --set "google-chrome"
+# #racourci
+# xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F1" --create --type string --set "xfce4-terminal"
+# xfconf-query --channel xfce4-keyboard-shortcuts --property "/commands/custom/F2" --create --type string --set "google-chrome"
 
 
 
@@ -100,7 +100,7 @@ sudo apt-get install phpmyadmin
 ## Xubuntu: conf
 ##
 
-cd
+# cd
 # alias ne="emacs -nw"
 # alias clean="rm -rf *~"
 source /home/rainiugnas/.rvm/scripts/rvm

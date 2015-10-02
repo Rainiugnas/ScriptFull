@@ -97,9 +97,8 @@ wget -O ~/.config/xfce4/terminal/terminalrc https://raw.githubusercontent.com/Ra
 xfconf-query -c xfwm4 -p "/general/theme" --create --type string --set "Numix"
 
 #global theme
-xfconf-query -c xfwm4 -p "/general/theme" --create --type string --set "Numix"
+xfconf-query -c xsettings -p "/Net/ThemeName" --create --type string --set "Numix"
 
-#remove background image
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/image-show -s false
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor1/image-show -s false
+#background
 xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/image-style -s 0
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorVirtual1/workspace0/color1 -t uint -s 3084 -t uint -s 3084 -t uint -s 3080 -t uint -s 65535
