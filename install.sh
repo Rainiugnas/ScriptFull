@@ -72,7 +72,7 @@ apt-get install sublime-text
 
 #sublime's conf
 mkdir -p ~/.config/sublime-text-2/Packages/User
-wget -O ~/.config/sublime-text-2/Packages/User/Preferences.sublime-settings https://github.com/Rainiugnas/ScriptFull/blob/master/sublime-settings.json
+wget -O ~/.config/sublime-text-2/Packages/User/Preferences.sublime-settings https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/sublime-settings.json
 wget -O ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/sublime-bind.json
 
 
