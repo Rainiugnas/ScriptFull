@@ -1,4 +1,4 @@
 # ScriptFull
-`wget https://github.com/Rainiugnas/ScriptFull/blob/master/install.sh`
+`wget https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/install.sh`
 
 `sudo bash install.sh`
