@@ -1,10 +1,11 @@
 #get rails
 apt-get install curl
-\curl -L https://get.rvm.io | bash -s stable --rails
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable --rails
 
 #Required by rvm
-source /home/rainiugnas/.rvm/scripts/rvm
-echo -e "\nRequired by rvm\nsource /home/rainiugnas/.rvm/scripts/rvm" >> ~/bashrc
+source ~/.rvm/scripts/rvm
+echo -e "\nRequired by rvm\nsource ~/.rvm/scripts/rvm" >> ~/bashrc
 
 
 #Add bash conf
