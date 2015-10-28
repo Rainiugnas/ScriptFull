@@ -5,7 +5,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 
 #Required by rvm
 source ~/.rvm/scripts/rvm
-echo -e "\nRequired by rvm\nsource ~/.rvm/scripts/rvm" >> ~/bashrc
+echo -e "\nRequired by rvm\n[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"" >> ~/.bashrc
 
 
 #Add bash conf
