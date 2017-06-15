@@ -6,7 +6,5 @@ Script to configure my working environment.
 `sudo bash install.sh`
 
 ## Install macOS
-Follow the steps listed in /macos/install.md
-
-## Todo
-Fully script macOS as xubuntu instead of a list of steps.
+Basic macos configuration:  
+sudo sh -c "$(curl https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/macos/install.sh)"
