@@ -2,6 +2,7 @@
 brew install gpg
 command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
 \curl -sSL https://get.rvm.io | bash -s stable --rails
+source /Users/Rainiugnas/.rvm/scripts/rvm
 
 # Shell configuration
 echo '' >> ~/.global_shell_conf.sh
