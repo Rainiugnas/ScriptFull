@@ -1,9 +1,7 @@
-#Remove basic keybinding
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-]': 'unset!'
   'cmd-[': 'unset!'
 
-#Add personal keybinding
 'body.platform-darwin':
   'cmd-{': 'simple-panes:move-item-left-of-pane'
   'cmd-}': 'simple-panes:move-item-right-of-pane'
@@ -15,8 +13,6 @@
   'cmd-]': 'pane:show-next-item'
   'alt-tab': 'window:focus-next-pane'
 
-#Override emmet keybinding for block-travel
 'atom-text-editor':
-  'alt-up': 'block-travel:move-up'
-  'alt-down': 'block-travel:move-down'
+  'shift-cmd-H': 'git-plus:menu'
   'alt-cmd-h': 'file-explorer:toggle-home-directory'
