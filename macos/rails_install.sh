@@ -13,3 +13,4 @@ apm install language-rspec
 apm install rails-rspec
 apm install rails-transporter
 apm install ruby-test
+apm install goto-definition

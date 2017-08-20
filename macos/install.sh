@@ -8,6 +8,7 @@ brew cask install atom
 brew cask install vlc
 brew cask install google-drive
 brew cask install webtorrent
+brew cask install docker
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Shell conf
@@ -41,3 +42,15 @@ defaults read com.apple.dock > /dev/null
 defaults write com.apple.dock "persistent-others" {}
 defaults read com.apple.dock > /dev/null
 killall Dock
+
+#Add folders
+mkdir ~/Documents/php
+mkdir ~/Documents/ruby
+mkdir ~/Documents/champagne-terroir
+
+#Natify web
+npm install nativefier -g
+cd ~/Applications
+nativefier "https://www.messenger.com/"
+nativefier "https://trello.com/"
+nativefier "https://inbox.google.com" --name "Inbox"
