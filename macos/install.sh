@@ -9,12 +9,9 @@ brew cask install vlc
 brew cask install google-drive
 brew cask install webtorrent
 brew cask install docker
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Shell conf
-defaults write com.apple.Terminal "Default Window Settings" "Pro"
-defaults write com.apple.Terminal "Startup Window Settings" "Pro"
-killall Terminal
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 curl https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/macos/global_shell_conf.sh > ~/.global_shell_conf.sh
 echo "source ~/.global_shell_conf.sh" >> ~/.zshrc
 
@@ -54,3 +51,8 @@ cd ~/Applications
 nativefier "https://www.messenger.com/"
 nativefier "https://trello.com/"
 nativefier "https://inbox.google.com" --name "Inbox"
+
+#Shell theme
+defaults write com.apple.Terminal "Default Window Settings" "Pro"
+defaults write com.apple.Terminal "Startup Window Settings" "Pro"
+killall Terminal
