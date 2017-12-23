@@ -1,12 +1,19 @@
 "*":
   core:
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "atom-dark-syntax"
     ]
   "exception-reporting":
     userId: "60783969-af20-4f00-9833-c451479b272e"
+  "linter-ui-default":
+    panelHeight: 69
   "platformio-ide-terminal":
     core: {}
     style:
       animationSpeed: 100
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false

@@ -3,13 +3,19 @@ alias ne='emacs -nw'
 alias clean='rm -rf *~'
 
 #Git alias
-alias branch="git branch"
+alias branch="git checkout"
 alias status="git status"
-alias info="branch; status"
+alias info="git branch; status"
 alias back="git reset --hard HEAD"
 alias commit_delete="git reset --hard HEAD^1"
 alias committemplate="atom .git/template.txt"
 alias loadtemplate='git config --local commit.template "$PWD/.git/template.txt"'
+alias glog="git log --oneline"
+alias plog="git log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'"
+alias rebase="git rebase -i"
+alias rcontinue="git rebase --continue"
+alias rabort="git rebase --abort"
+alias pushf="git push --force"
 
 #Useful alias
 alias bashconf="atom ~/.global_shell_conf.sh"
@@ -20,9 +26,8 @@ alias loadconf="source ~/.global_shell_conf.sh"
 alias repairaudio="sudo killall coreaudiod"
 
 #Go to alias
-alias gophp='cd ~/Documents/php'
-alias goruby='cd ~/Documents/ruby'
-alias goct='cd ~/Documents/champagne-terroir'
+alias goruby="cd ~/Documents/ruby"
+alias gorails="cd ~/Documents/rails"
 
 #Launch atom
 alias atomhosts='atom /private/etc/hosts'
@@ -31,10 +36,11 @@ alias atomhosts='atom /private/etc/hosts'
 # ssh-keygen
 # ssh-copy-id username@host
 # Use ssh-add to store in ssh-agent and avoid alway use password
-# Use ssh-add -D to readd the password
+# Use ssh-add -D to use the password
 ##
-alias servct='ssh champagnme@ftp.champagne-terroir.fr'
 
 #Open file
 alias account='open ~/Google\ Drive/Compte.gsheet'
-alias time='open ~/Google\ Drive/champagne-terroir-shared/Salaire\ 07:12\ 2017.gsheet'
+alias crypto='open ~/Google\ Drive/Crypto.gsheet'
+alias github='open https://github.com/Rainiugnas'
+alias bitbucket='open https://bitbucket.org/'
