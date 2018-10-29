@@ -10,6 +10,9 @@ brew cask install google-drive
 brew cask install webtorrent
 brew cask install docker
 brew cask install filezilla
+brew cask install slack
+brew cask install tunnelblick
+brew cask install postman
 
 # Shell conf
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -32,6 +35,7 @@ apm install block-travel
 apm install file-explorer
 apm install platformio-ide-terminal
 apm install goto-definition
+apm install pretty-json
 curl https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/macos/atom_keybinding.cson > ~/.atom/keymap.cson
 curl https://raw.githubusercontent.com/Rainiugnas/ScriptFull/master/macos/atom_config.cson > ~/.atom/config.cson
 
@@ -41,10 +45,6 @@ defaults read com.apple.dock > /dev/null
 defaults write com.apple.dock "persistent-others" {}
 defaults read com.apple.dock > /dev/null
 killall Dock
-
-#Add folders
-mkdir ~/Documents/ruby
-mkdir ~/Documents/rails
 
 #Natify web
 npm install nativefier -g
@@ -57,3 +57,7 @@ nativefier "https://inbox.google.com" --name "Inbox"
 defaults write com.apple.Terminal "Default Window Settings" "Pro"
 defaults write com.apple.Terminal "Startup Window Settings" "Pro"
 killall Terminal
+
+#Password manager
+echo 'Press enter to continue, after the password manager and password file installation'
+read

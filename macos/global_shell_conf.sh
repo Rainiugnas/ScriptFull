@@ -3,6 +3,11 @@ alias ne='emacs -nw'
 alias clean='rm -rf *~'
 
 #Git alias
+cbranch() {
+  echo "$1 - " > $PWD/.git/template.txt
+  git config --local commit.template $PWD/.git/template.txt
+  git checkout -b $1
+}
 alias branch="git checkout"
 alias status="git status"
 alias info="git branch; status"
@@ -24,10 +29,8 @@ alias findfile="find ~/. -iname"
 alias loadconf="source ~/.global_shell_conf.sh"
 # https://superuser.com/questions/566102/microphone-not-working-with-google-hangout
 alias repairaudio="sudo killall coreaudiod"
-
-#Go to alias
-alias goruby="cd ~/Documents/ruby"
-alias gorails="cd ~/Documents/rails"
+alias pm="password_manager -f /Users/Rainiugnas/Documents/password.json"
+alias opm="atom /Users/Rainiugnas/Documents/password.json && pm -t"
 
 #Launch atom
 alias atomhosts='atom /private/etc/hosts'
@@ -38,9 +41,3 @@ alias atomhosts='atom /private/etc/hosts'
 # Use ssh-add to store in ssh-agent and avoid alway use password
 # Use ssh-add -D to use the password
 ##
-
-#Open file
-alias account='open ~/Google\ Drive/Compte.gsheet'
-alias crypto='open ~/Google\ Drive/Crypto.gsheet'
-alias github='open https://github.com/Rainiugnas'
-alias bitbucket='open https://bitbucket.org/'
