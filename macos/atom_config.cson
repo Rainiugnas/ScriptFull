@@ -8,11 +8,13 @@
   "exception-reporting":
     userId: "60783969-af20-4f00-9833-c451479b272e"
   "linter-ui-default":
-    panelHeight: 69
+    panelHeight: 300
   "platformio-ide-terminal":
     core: {}
     style:
       animationSpeed: 100
+  "ruby-test":
+    specFramework: "rspec"
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
