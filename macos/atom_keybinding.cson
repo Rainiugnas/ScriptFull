@@ -16,3 +16,6 @@
 'atom-text-editor':
   'shift-cmd-H': 'git-plus:menu'
   'alt-cmd-h': 'file-explorer:toggle-home-directory'
+  
+'.platform-darwin':
+  'cmd-shift-a a': 'git-plus:add-all-and-commit'
